@@ -1,0 +1,170 @@
+:root {
+    --black: #171321;
+    --dkblue: #0d314b;
+    --plum: #4b0d49;
+    --hotmag: #ff17e4;
+    --magenta: #e310cb;
+    --aqua: #86fbfb;
+    --white: #f7f8fa;
+    --font-size: 1.5rem;
+    --mono: "Oxygen mono", monospace;
+    --sans: Oxygen, sans-serif;
+}
+/* border box model: https://css-tricks.com/box-sizing/ */
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: var(--black) ;
+    font-family: 'Oxygen Mono', monospace;
+    color: var(--white);
+    font-size: var(--font-size);
+}
+p{
+    indent: 20px;
+}
+h1, h2, h3 {
+    margin: 0;
+}
+
+a {
+    color: var(--magenta);
+}
+
+a:hover {
+    color: var(--hotmag);
+    text-decoration: none;
+}
+
+/* intro styles */
+
+#intro {
+    padding-bottom: 10rem;
+}
+
+#intro p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+#intro.name{
+    font-family: var(--sans)
+}
+
+#contact a {
+    text-decoration: 0;
+}
+#contact a:hover{
+    color: var(--magenta);
+}
+
+.name span {
+    font-family: var(--mono);
+    font-size: 3rem;
+    color: var(--aqua);
+    display: block;
+}
+
+.name-me span {
+    font-family: var(--mono);
+    font-size: 3rem;
+    color: var(--aqua);
+    display: inline;
+}
+.script span{
+    font-family: var(--mono);
+    font-size: 5rem;
+    color: var(--aqua);
+    display: inline;
+    
+}
+
+#contact {
+    background-color: var(--plum);
+    padding: 2rem 0;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: var(--hotmag)
+    
+}
+
+#contact p:last-child{
+    margin-top: 4rem;
+}
+
+/* navbar */
+
+nav {
+    font-family: var(--mono);
+    font-size: 80%;
+    padding: 1rem;
+}
+
+nav h1 a {
+    font-family: var(--sans)
+}
+/* very important here for navbars */
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--plum);
+}
+
+nav li:first-child{
+    flex-basis: 100%;
+    text-align: center;
+}
+
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    display: block;
+}
+
+nav a:hover{
+    color: var(--magenta);
+}
+
+i.fa{ 
+    font-family:FontAwesome!important; 
+}
+
+.python{
+    color: var(--aqua);
+    text-align:center;
+}
+
+.Projects{
+    color: var(--aqua);
+    text-align: center;
+}
+
+.quote-tool{
+    font-family: var(--sans);
+    padding: 2rem;
+}
+
+.Webdev{
+    padding: 2rem;
+    text-align: center;
+    color: var(--aqua);
+}
+
+
+
